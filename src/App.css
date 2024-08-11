@@ -1,0 +1,583 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  /* background: rgb(0,26,248);
+  background: linear-gradient(90deg, rgba(0,26,248,1) 0%, rgba(71,12,199,1) 21%, rgba(19,6,31,1) 77%); */
+  background: rgb(0,26,248);
+background: linear-gradient(90deg, rgba(0,26,248,1) 0%, rgba(56,0,179,1) 0%, rgba(19,6,31,1) 77%);
+}
+.navbar{
+  height: 10vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: sticky;
+  margin-top: 1vh;
+}
+.NavbarHeading{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Navoptions{
+  display: flex;
+}
+.Navoptions .link{
+  text-decoration: none;
+  color: white;
+}
+.Navoptions li{
+  list-style: none;
+  margin-left: 4vw;
+}
+ li .Skillselement{
+  text-decoration: none;
+  color: white;
+}
+.Navoptions li:hover{
+  cursor: pointer;
+  border-bottom: 4px solid purple;
+  border-radius: 5px;
+}
+.Navoptions li button{
+  padding: 5px;
+  display: inline;
+  border: none;
+  border-radius: 3px ;
+  background-color: rgb(140, 63, 192);
+  color: white;
+
+}
+.Navoptions button:hover{
+  padding: 4px;
+  border: none;
+  border-radius: 3px ;
+  background-color: black;
+  color: white;
+}
+
+
+
+/* Homepage */
+.Divider{
+  height: 90vh;
+  width: 94vw;
+  display: flex;
+}
+.Description{
+  height: 80vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 6vw;
+}
+.DescriptionHeading{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color:white
+}
+.DescriptionBody{
+  margin-top: 1.5vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color:white
+}
+.images{
+  height: 80vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.Myimage{
+  height: 60vh;
+  width: 40vw;
+  border-radius: 4px;
+  margin: 7vh 0  0 12vw;
+}
+ .actualpicture{
+  height: 60vh;
+  width: 28vw;
+  object-fit: contain;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.Techlogos{
+  display: flex;
+  margin-top: 2vh;
+}
+.logobox{
+  height: 13vh;
+  width: 6vw;
+  border: 2px solid #8a2be2;
+  border-radius: 6px;
+  margin-left: 1vw;
+}
+.actualLogo{
+height: 10vh;
+width: 5vw;
+margin: 5px 0 0 6px;
+object-fit: contain;
+}
+.actualLogo:hover{
+  transform: translateY(-4px);
+}
+ 
+@media (max-width:455px){
+  .Description{
+    margin-left: 0;
+  }
+  .Myimage{
+    height: 60vh;
+    width: 40vw;
+    border-radius: 4px;
+    /* margin: 7vh 0  0 12vw; */
+  }
+   .actualpicture{
+    height: auto;
+    width: 36vw;
+    object-fit: contain;
+    border: 1px solid;
+    margin-top: 17vh;
+    border-radius: 10px;
+  }
+  .Techlogos{
+    display: flex;
+    margin-bottom: 29vh;
+    margin-left: 1vw;
+  }
+  .logobox{
+    height: 4vh;
+    width: 7vw;
+    border: 2px solid #8a2be2;
+    border-radius: 6px;
+    margin-left: 2vw;
+  }
+  .actualLogo{
+  height: auto;
+  width: 6vw;
+  margin:0;
+  object-fit: contain;
+  }
+}
+
+/* Skill */
+.SkillContainer{
+  width: 85vw;
+display: flex;
+justify-content: space-between;
+}
+.SkillBox{
+  height: 50vh;
+  width: 45vw;
+  color: white;
+  margin-top: 3vh;
+}
+.SkillHeading{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+.Skillboxcontent{
+  display: flex;
+  flex-wrap: wrap;
+}
+.Skillboxcontainer{
+  height: 20vh;
+  width:  20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: 2px solid rgb(98, 0, 255);
+  border-radius: 5px;
+  margin:1vh 0 0 1vw;
+}
+.Skillboxcontainer:hover{
+background-color: rgb(98, 0, 255);
+cursor: pointer;
+}
+.ContentText{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+.SkillGraphContainer1{
+  height: 30vh;
+  width: 40vw;
+  border: 2px solid rgb(98, 0, 255);
+  color: white;
+  border-radius: 6px;
+}
+.skillname{
+  margin: 2vh 0 0 1vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+.SkillGraph{
+  margin-top: 13vh;
+}
+.SkillGraphContainer:hover{
+  cursor:pointer
+}
+.SkillGraphContainer2{
+  height: 30vh;
+  width: 40vw;
+  border: 2px solid rgb(98, 0, 255);
+  color: white;
+  border-radius: 6px;
+}
+.SkillGraphContainer2:hover{
+  cursor:pointer
+}
+.graphLine{
+  display: flex;
+}
+.Html{
+  width: 6vw;
+  color: #8a2be2;
+}
+.purle{
+  background-color:rgb(98, 0, 255) ;
+}
+@media (max-width:455px){
+  .SkillContainer{
+    width: 85vw;
+  display: flex;
+  flex-direction: column;
+  }
+  .SkillBox{
+    height: 50vh;
+    width: 85vw;
+    color: white;
+    margin-top: 0;
+  }
+  .SkillHeading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  }
+  .Skillboxcontent{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Skillboxcontainer{
+    height: 20vh;
+    width:  40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border: 2px solid rgb(98, 0, 255);
+    border-radius: 5px;
+    margin:1vh 0 0 1.5vw;
+  }
+  .Skillboxcontainer:hover{
+  background-color: rgb(98, 0, 255);
+  cursor: pointer;
+  }
+  .ContentText{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  }
+  .SkillGraphContainer1{
+    height: 20vh;
+    width: 85vw;
+    border: 2px solid rgb(98, 0, 255);
+    color: white;
+    border-radius: 6px;
+  }
+  .skillname{
+    margin: 2vh 0 0 1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  }
+  .SkillGraph{
+    margin-top: 1vh;
+  }
+  .SkillGraphContainer:hover{
+    cursor:pointer
+  }
+  .SkillGraphContainer2{
+    height: 20vh;
+    width: 85vw;
+    border: 2px solid rgb(98, 0, 255);
+    color: white;
+    border-radius: 6px;
+  }
+  .SkillGraphContainer2:hover{
+    cursor:pointer
+  }
+  .graphLine{
+    display: flex;
+  }
+  .Html{
+    width: 6vw;
+    color: #8a2be2;
+  }
+  .purle{
+    background-color:rgb(98, 0, 255) ;
+  }
+}
+/* media queries lagani hai */
+
+/* Projects */
+.ProjectVideoView{
+  display: flex;
+}
+.ProjectsMaindiv{
+  height: 60vh;
+  width: 80vw;
+  margin-top: 3vh;
+}
+.ProjectsHeading{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.ProjectsdataContainer{
+  height: 50vh;
+  width: 40vw;
+  border: 3px solid rgb(98, 0, 255);
+  border-radius: 6px;
+  margin: 2vh 0 0 5vw;
+}
+.Video{
+  height: 45vh;
+  width: 33vw;
+  object-fit: contain;
+  margin-left: 1vw;
+}
+.videoDescription{
+  margin-left: 10vw;
+}
+.videoDescriptionText{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+@media (max-width:455px) {
+  .ProjectVideoView{
+    display: flex;
+    flex-direction: column;
+  }
+  .ProjectsMaindiv{
+    height: 60vh;
+    width: 100vw;
+    margin-top: 3vh;
+  }
+  .ProjectsdataContainer{
+    height: 25vh;
+    width: 90vw;
+    border: 3px solid rgb(98, 0, 255);
+    border-radius: 6px;
+  }
+  .Video{
+    height: 20vh;
+    width: 80vw;
+    object-fit: contain;
+    margin-left: 5vw;
+  }
+  .videoDescriptionText{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    margin-left: 12vw;
+  }
+}
+
+/* Contact */
+.ContactHeading{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: white;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+.ContactMain{
+  height: auto;
+  width: 98vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ContactLinks{
+  width: 55vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contactLinkbox{
+  width: 25vw;
+  display: flex;
+  padding: 1.5vh;
+  background-color:  rgba(115, 0, 255, 0.8);
+  border-radius: 8px;
+  margin: 4vh 0 0  1vw;
+}
+.Linklogo{
+  height: 4vh;
+  width: 4vw;
+  object-fit: contain;
+}
+.linkdetails{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.ContactFrom{
+  height: auto;
+  width: 40vw;
+}
+#gmail{
+  width: 30vw;
+  padding: 8px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  background-color:  rgba(115, 0, 255, 0.8);
+  color: white;
+  border-radius: 4px ;
+  border: none;
+}
+#gmail:hover{
+  outline: none;
+  border: none;
+}
+
+#gmail:focus{
+  outline: none;
+  border: none;
+}
+.gmail{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+#Send{
+  width: 30vw;
+  padding: 3px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  background-color:  rgba(115, 0, 255, 0.8);
+  color: white;
+  border-radius: 4px ;
+  border: none;
+  margin-bottom: 1vh;
+}
+.Send{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.SendButtton{
+  width: 20vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  background-color: #8a2be2;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 4vw;
+}
+@media (max-width:455px){
+  .ContactMain{
+    height: auto;
+    width: 98vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  } 
+  .ContactHeading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+  }
+  .ContactLinks{
+    width: 100vw;
+    display: flex;
+  }
+  .contactLinkbox{
+    width: 75vw;
+    display: flex;
+    background-color:  rgba(115, 0, 255, 0.8);
+    border-radius: 8px;
+    margin-top: 2vh;
+    display: inline-flex;
+  }
+  .Linklogo{
+    height: 4vh;
+    width: 6vw;
+    object-fit: contain;
+  }
+  .linkdetails{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-top: 0.7vh;
+  }
+  .ContactFrom{
+    height: auto;
+    width: 100vw;
+    margin-bottom: 2vh;
+  }
+  #gmail{
+    width: 85vw;
+    padding: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px ;
+    background-color:  rgba(115, 0, 255, 0.8);
+    color: white;
+    margin-bottom: 1vh;
+  }
+  #gmail:hover{
+    outline: none;
+    border: none;
+  }
+  
+  #gmail:focus{
+    outline: none;
+    border: none;
+  }
+  .gmail{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+  }
+  #Send{
+    width: 80vw;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    background-color:  rgba(115, 0, 255, 0.8);
+    color: white;
+    border-radius: 4px ;
+    border: none;
+    margin-bottom: 1vh;
+  }
+  .Send{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+  }
+  .SendButtton{
+    width: 20vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    background-color: #8a2be2;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 30vw;
+  }
+}
