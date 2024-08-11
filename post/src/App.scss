@@ -1,0 +1,328 @@
+@use "_partial.scss" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Container {
+  height: 100vh;
+  width: 100vw;
+  background: $bg ;
+  display: flex;
+  align-items: center;
+.logo{
+  margin-left: 10vw;
+}
+  .form {
+    height: 70vh;
+    width: 30vw;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    margin-left: 5vw;
+
+    .LoginHeading {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 2vh;
+    }
+
+    .inputclass {
+      margin-top: 3vh;
+      display: flex;
+      flex-direction: column;
+      margin-left: 4vw;
+
+      label {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.3rem;
+      }
+
+      input {
+        width: 60%;
+        padding: 9px;
+        border: 1px solid rgb(200, 200, 200);
+        border-radius: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        &:focus {
+          outline: none;
+          border: 1px solid rgb(200, 200, 200);
+        }
+      }
+    }
+
+    .submit-button {
+      margin-top: 4vh;
+      margin-left: 8vw;
+
+      p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        .signup {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: rgb(120, 63, 195);
+        }
+      }
+
+      .Loginbutton {
+        width: 10vw;
+        padding: 6px;
+        background: #000;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+      }
+    }
+
+    .select-content {
+      margin-top: 2vw;
+      margin-left: 3vw;
+      p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+      }
+      .option {
+        width: 6vw;
+        margin-left: 1.5vw;
+        margin-bottom: 0.5vh;
+        padding: 5px;
+        border: none;
+        border-radius: 6px;
+      }
+      .pink{
+        background: pink;
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-width: 455px) {
+  .Container {
+    .form {
+      height: 45vh;
+      width: 75vw;
+      margin-left: 1vw;
+      .inputclass {
+        margin-left: 2vw;
+        input {
+          width: 75%;
+        }
+      }
+      .submit-button{
+      .Loginbutton {
+        width: 20vw;
+        margin-left: 0;
+      }
+    }
+    .select-content {
+      margin-top: 2vw;
+      margin-left: 3vw;
+      p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+      }
+      .option {
+        width: 15vw;
+        margin-left: 1.5vw;
+        margin-bottom: 0.5vh;
+        padding: 5px;
+        border: none;
+        border-radius: 6px;
+      }
+    }
+  }
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  .Container {
+    .form {
+      height: 57vh;
+      width: 75vw;
+      margin-left: 1vw;
+      .inputclass {
+        margin-left: 2vw;
+        input {
+          width: 75%;
+        }
+      }
+      .submit-button{
+      .Loginbutton {
+        width: 20vw;
+        margin-left: 0;
+      }
+    }
+    .select-content {
+      margin-top: 2vw;
+      margin-left: 3vw;
+      p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+      }
+      .option {
+        width: 15vw;
+        margin-left: 1.5vw;
+        margin-bottom: 0.5vh;
+        padding: 5px;
+        border: none;
+        border-radius: 6px;
+      }
+    }
+  }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .Container {
+    .form {
+      height: 57vh;
+      width: 75vw;
+      margin-left: 1vw;
+      .inputclass {
+        margin-left: 2vw;
+        input {
+          width: 75%;
+        }
+      }
+      .submit-button{
+      .Loginbutton {
+        width: 20vw;
+        margin-left: 0;
+      }
+    }
+    .select-content {
+      margin-top: 2vw;
+      margin-left: 3vw;
+      p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+      }
+      .option {
+        width: 15vw;
+        margin-left: 1.5vw;
+        margin-bottom: 0.5vh;
+        padding: 5px;
+        border: none;
+        border-radius: 6px;
+      }
+    }
+  }
+  }
+}
+
+@media (max-width: 1100px) {
+  .Container {
+    .form {
+      height: 65vh;
+      width: 75vw;
+      margin-left: 1vw;
+      .inputclass {
+        margin-left: 2vw;
+        input {
+          width: 75%;
+        }
+      }
+      .submit-button{
+      .Loginbutton {
+        width: 20vw;
+        margin-left: 0;
+      }
+    }
+    .select-content {
+      margin-top: 2vw;
+      margin-left: 3vw;
+      p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+      }
+      .option {
+        width: 15vw;
+        margin-left: 1.5vw;
+        margin-bottom: 0.5vh;
+        padding: 5px;
+        border: none;
+        border-radius: 6px;
+      }
+    }
+  }
+  }
+}
+
+
+// signup
+.signup-container {
+  background-color: #000; // Black background
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .signup-form {
+      background-color: #fff; // White form background
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+
+      h2 {
+          text-align: center;
+          margin-bottom: 1.5rem;
+      }
+
+      .error {
+          color: red;
+          text-align: center;
+          margin-bottom: 1rem;
+      }
+
+      .form-group {
+          margin-bottom: 1rem;
+
+          label {
+              display: block;
+              margin-bottom: 0.5rem;
+          }
+
+          input {
+              width: 100%;
+              padding: 0.5rem;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+          }
+      }
+
+      button {
+          width: 100%;
+          padding: 0.75rem;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover {
+              background-color: #0056b3;
+          }
+      }
+  }
+}
+
+@media (max-width: 455px){
+  .signup-container{
+    .signup-form{
+      width: 80%
+    }
+  }
+}
